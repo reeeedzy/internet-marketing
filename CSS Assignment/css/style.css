@@ -1,0 +1,139 @@
+/*
+  Created by: Reed Turner - 1002059456
+  Created on: 10/10/23
+  Updated on: 1/23/24
+  Project: CSS Assignment
+*/
+
+* {
+	box-sizing: border-box;
+	position: relative;
+}
+/* *CSS Assignment Styles* */
+body {
+	display: flex;
+	flex-flow: row wrap;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 1rem;
+}
+
+header {
+	background-image: url(../images/background_small.gif);
+	background-repeat: no-repeat;
+	text-align: center;
+	border-bottom: 2px solid black;
+	width: 100%;
+}
+
+header h1 {
+	font-size: 20.8px;
+}
+
+header h2 {
+	font-size: 16px;
+}
+
+nav > ul {
+	list-style-type: none;
+}
+
+nav li {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+nav li:hover {
+	background-color: yellow;
+	cursor: pointer;
+}
+
+nav li > a {
+	text-decoration: none;
+}
+
+div {
+	flex: 1 0 100%;
+	margin-top: 0.75em;
+}
+
+nav > ul {
+	padding-left: 0.5rem;
+	margin-right: 6rem;
+	padding-right: 0.5rem;
+	width: 100%;
+}
+
+nav li {
+	padding-top: 0.25rem;
+	padding-bottom: 0.1rem;
+	margin-top: 0.5rem;
+	border-bottom: solid 4px rgb(212, 212, 212);
+	font-size: large;
+	text-align: center;
+}
+
+footer {
+	width: 100%;
+	border-top: 1px solid black;
+	text-align: center;
+}
+
+.footer-txt {
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* End of CSS Assignment Styles */
+
+@media screen and (min-width: 480px) {
+	header h1 {
+		font-size: 24px;
+	}
+
+	header h2 {
+		font-size: 20.8px;
+	}
+}
+@media screen and (min-width: 768px) {
+	header {
+		background-image: url(../images/background.gif);
+	}
+
+	header h1 {
+		font-size: 32px;
+	}
+
+	header h2 {
+		font-size: 24px;
+	}
+
+	body {
+		width: 80%;
+		padding: 0 0;
+	}
+
+	main {
+		flex: 1 1 65%;
+		margin-top: 1.5rem;
+		margin-bottom: 1.25rem;
+		padding-left: 1rem;
+	}
+
+	div {
+		flex: 0 0 auto;
+	}
+
+	nav > ul {
+		padding-left: 0.5rem;
+		margin-right: 6rem;
+		padding-right: 0.5rem;
+		width: 100%;
+	}
+
+	nav li {
+		padding-top: 0.25rem;
+		padding-bottom: 0.1rem;
+		margin-top: 0.5rem;
+		border-bottom: solid 4px rgb(212, 212, 212);
+		font-size: large;
+		text-align: left;
+	}
+}
